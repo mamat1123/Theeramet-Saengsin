@@ -1,15 +1,20 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-  </q-layout>
+    <q-layout style="height:2000px">
+        <q-header elevated>
+            <Toolbar />
+        </q-header>
+        <router-view />
+    </q-layout>
 </template>
 
 <script>
+import Toolbar from './components/Toolbar'
 export default {
+  components: {
+    Toolbar
+  }
 }
 </script>
 
-<style>
+<style scoped>
 </style>

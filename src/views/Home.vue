@@ -1,6 +1,7 @@
 <template>
   <div>
     <Parallex/>
+    <About/>
   </div>
 </template>
 
@@ -8,10 +9,12 @@
 </style>
 
 <script>
-import Parallex from '../components/Home/Parallex'
+import Parallex from '../components/Parallex'
+import About from '../components/About'
 export default {
   components: {
-    Parallex
+    Parallex,
+    About
   }
 }
 </script>
