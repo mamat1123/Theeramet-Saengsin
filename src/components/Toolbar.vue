@@ -7,22 +7,22 @@
                     <q-tab name="about">
                         <h5 :class="{'color-tab':scrollInfo !== 0}">About</h5>
                     </q-tab>
-                    <q-tab name="work">
-                        <h5 :class="{'color-tab':scrollInfo !== 0}">Project</h5>
+                    <q-tab name="projects">
+                        <h5 :class="{'color-tab':scrollInfo !== 0}">Projects</h5>
                     </q-tab>
-                    <q-tab name="work">
-                        <h5 :class="{'color-tab':scrollInfo !== 0}">Work</h5>
+                    <q-tab name="works">
+                        <h5 :class="{'color-tab':scrollInfo !== 0}">Works</h5>
                     </q-tab>
                     <q-avatar size="70px">
                         <img :src="require('@/assets/img/logo.jpg')" />
                     </q-avatar>
-                    <q-tab name="about">
+                    <q-tab name="skills">
                         <h5 :class="{'color-tab':scrollInfo !== 0}">Skills</h5>
                     </q-tab>
-                    <q-tab name="work">
+                    <q-tab name="education">
                         <h5 :class="{'color-tab':scrollInfo !== 0}">Education</h5>
                     </q-tab>
-                    <q-tab name="work">
+                    <q-tab name="contact">
                         <h5 :class="{'color-tab':scrollInfo !== 0}">Contact</h5>
                     </q-tab>
                 </q-tabs>
@@ -37,6 +37,7 @@ export default {
     return {
       drawer: false,
       scrollInfo: {},
+      tab: ''
     }
   },
   methods: {
