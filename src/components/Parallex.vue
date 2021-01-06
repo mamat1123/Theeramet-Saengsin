@@ -3,13 +3,13 @@
         <q-img :src="require(`@/assets/img/${data.img}.jpg`)" height="100vh">
             <div class="items-center row" style="height: 100%;width: 100%;">
                 <div class="col-12 text-center row justify-center items-center">
-                    <h5 class="col-12">MY NAME IS</h5>
+                    <h5 class="col-12">I AM A</h5>
                     <h2 class="col-12 text-green-13">
                         <span class="typed-text">{{typeValue}}</span>
                         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
                     </h2>
                     <div class="line col-8"></div>
-                    <h4 class="col-12">FONT-END DEVELOPER</h4>
+                    <h4 class="col-12">THEERAMET SAENGSIN</h4>
                     <q-btn outline style="margin-top:10px" size="lg" color="green-13" @click="ScrollToWork">
                         <h5 class>View my work</h5>
                     </q-btn>
@@ -28,7 +28,7 @@ export default {
       scrollInfo: {},
       typeValue: '',
       typeStatus: false,
-      typeArray: ['THEERAMET SAENGSIN 😀', 'ธีรเมธ แสงสิน', 'SHINCHAN 🥺'],
+      typeArray: ['WEB DEVELOPER 😀', 'MOBILE APP DEVELOPER', 'SHINCHAN 🥺'],
       typingSpeed: 150,
       erasingSpeed: 100,
       newTextDelay: 2000,

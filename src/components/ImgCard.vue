@@ -12,9 +12,9 @@
         </div>
         <div class="col-4 row" id="info">
             <div class="col-12">
-                <h5>Advance Fiber Co., Ltd.</h5>
-                <h3 style="margin:30px 0">Advance Fiber</h3>
-                <h5 style="color:#6F6F6F;font-size:18px">Front-end Develop,CMS</h5>
+                <h5>{{data.company}}</h5>
+                <h3 style="margin:30px 0">{{data.name}}</h3>
+                <h5 style="color:#6F6F6F;font-size:18px">{{data.type}}</h5>
             </div>
         </div>
     </div>
@@ -23,6 +23,15 @@
 <script>
 export default {
   props: ['contain', 'height', 'img'],
+  data () {
+    return {
+      data: {
+        company: 'Advance Fiber Co., Ltd.',
+        name: 'Advance Fiber',
+        type: 'Front-end Develop, CMS'
+      }
+    }
+  },
   mounted () {
     var me = this
     var value = document.querySelector(`#info`).offsetTop + 550
@@ -34,10 +43,20 @@ export default {
     TrickerAnimation (id, className, value) {
       if (document.querySelector(`#${id}`) !== null) {
         var top = window.pageYOffset + window.innerHeight
-        console.log((value + value) - 1500 < top)
         var start = top > value
-        if ((value + value) - 1500 < top) {
-            console.log('Change')
+        if (top < 2800) {
+          this.data = {
+            company: 'Advance Fiber Co., Ltd.',
+            name: 'Advance Fiber',
+            type: 'Front-end Develop, CMS'
+          }
+        }
+        if (top > 2800) {
+          this.data = {
+            company: 'Hyphen',
+            name: 'Pmsklfmsklmf',
+            type: 'Front-end Develop, CMS'
+          }
         }
       }
       if (start) {

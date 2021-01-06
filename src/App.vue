@@ -16,5 +16,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+@media screen and (max-device-width: 767px),
+  screen and (max-width: 767px) {
+  h1 {
+    font-size: 60px !important;
+  }
+}
 </style>

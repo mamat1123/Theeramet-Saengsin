@@ -9,9 +9,9 @@
             />
         </div>
         <Paragraph class="col-12" title="Work" />
-        <div class="col-12 row" style="padding:0 0 80px">
+        <div class="col-12 row" style="padding:0 0 80px;height:500vh">
             <ImgCard class="col-12" :contain="true" img="/work/Advance-fiber/1.png" height="500px" />
-            <ImgCard class="col-12" :contain="true" img="/work/Advance-fiber/1.png" height="500px" />
+            <!-- <ImgCard class="col-12" :contain="true" img="/work/Advance-fiber/1.png" height="500px" /> -->
         </div>
     </div>
 </template>
